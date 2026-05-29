@@ -1,6 +1,6 @@
 # DebugCat SDK for Laravel
 
-The official Laravel SDK for [DebugCat](https://debugcat.test) — capture exceptions in your
+The official Laravel SDK for [DebugCat](https://debugcat.co) — capture exceptions in your
 Laravel app and ship them to your DebugCat project for grouping, alerting, and triage.
 
 Inspired by the architecture of Spatie's Flare client: a small framework-agnostic core
@@ -15,7 +15,7 @@ Throwable ──► DebugCat::report() ──► Report (built from backtrace)
                                        │
                       beforeSend hooks ┤  your custom mutations
                                        │
-                              Transport ──► POST {host}/api/ingest
+                              Transport ──► POST debugcat.co/api/ingest
                                             header: X-DebugCat-Key
 ```
 
@@ -37,7 +37,6 @@ Add your project's ingest key (shown once when you create the project in DebugCa
 
 ```dotenv
 DEBUGCAT_KEY=your-40-char-project-key
-DEBUGCAT_HOST=https://debugcat.test          # your DebugCat install
 DEBUGCAT_ENABLED=true
 DEBUGCAT_ENVIRONMENTS=production,staging      # report only from these (empty = all)
 DEBUGCAT_RELEASE="${APP_VERSION}"            # optional deploy/commit marker

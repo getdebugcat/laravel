@@ -19,18 +19,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Ingest Endpoint
-    |--------------------------------------------------------------------------
-    |
-    | Base URL of your DebugCat installation. The SDK POSTs occurrences to
-    | "{host}/api/ingest". Override this when self-hosting DebugCat.
-    |
-    */
-
-    'host' => env('DEBUGCAT_HOST', 'https://debugcat.test'),
-
-    /*
-    |--------------------------------------------------------------------------
     | Enabled
     |--------------------------------------------------------------------------
     |

@@ -15,7 +15,7 @@ it('posts an occurrence to /api/ingest with the project key header', function ()
     app(DebugCat::class)->report(new RuntimeException('kaboom'));
 
     Http::assertSent(function ($request) {
-        return $request->url() === 'https://debugcat.test/api/ingest'
+        return $request->url() === 'https://debugcat.co/api/ingest'
             && $request->method() === 'POST'
             && $request->hasHeader('X-DebugCat-Key', 'test-key')
             && $request['exception_class'] === RuntimeException::class

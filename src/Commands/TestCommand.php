@@ -33,7 +33,7 @@ class TestCommand extends Command
         );
 
         if ($report === null) {
-            $this->components->error('The test exception could not be sent. Check your DEBUGCAT_HOST and key.');
+            $this->components->error('The test exception could not be sent. Check your DEBUGCAT_KEY.');
 
             return self::FAILURE;
         }

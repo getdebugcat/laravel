@@ -18,7 +18,6 @@ abstract class TestCase extends Orchestra
     {
         $app['config']->set('debugcat.enabled', true);
         $app['config']->set('debugcat.key', 'test-key');
-        $app['config']->set('debugcat.host', 'https://debugcat.test');
         $app['config']->set('debugcat.environments', []); // report from all envs in tests
     }
 }

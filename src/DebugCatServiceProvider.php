@@ -31,7 +31,6 @@ class DebugCatServiceProvider extends ServiceProvider
 
             return new HttpTransport(
                 http: $app->make(Http::class),
-                host: (string) ($config['host'] ?? ''),
                 key: (string) ($config['key'] ?? ''),
                 timeout: (int) ($config['timeout'] ?? 5),
             );
