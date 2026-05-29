@@ -1,0 +1,45 @@
+{
+    "name": "debugcat/laravel",
+    "description": "Official DebugCat SDK for Laravel — capture exceptions and ship them to your DebugCat project.",
+    "keywords": ["debugcat", "laravel", "error-tracking", "exceptions", "monitoring"],
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^11.0",
+        "pestphp/pest": "^4.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DebugCat\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DebugCat\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DebugCat\\Laravel\\DebugCatServiceProvider"
+            ],
+            "aliases": {
+                "DebugCat": "DebugCat\\Laravel\\Facades\\DebugCat"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
