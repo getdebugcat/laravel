@@ -3,6 +3,12 @@
     "description": "Official DebugCat SDK for Laravel — capture exceptions and ship them to your DebugCat project.",
     "keywords": ["debugcat", "laravel", "error-tracking", "exceptions", "monitoring"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "DebugCat Inc.",
+            "homepage": "https://debugcat.co"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "illuminate/contracts": "^11.0|^12.0|^13.0",
